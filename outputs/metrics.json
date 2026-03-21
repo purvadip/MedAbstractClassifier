@@ -1,0 +1,20 @@
+[
+    {
+        "Model": "Logistic Regression",
+        "Accuracy": 0.96375,
+        "Precision (Macro)": 0.9644676445340487,
+        "Recall (Macro)": 0.9637461839222924,
+        "F1 (Macro)": 0.9635491202692176,
+        "F1 (Weighted)": 0.963546989844726,
+        "ROC-AUC (OVR)": 0.9965494368368608
+    },
+    {
+        "Model": "Multinomial NB",
+        "Accuracy": 0.90625,
+        "Precision (Macro)": 0.9067057589059905,
+        "Recall (Macro)": 0.9062550495195013,
+        "F1 (Macro)": 0.906444625184856,
+        "F1 (Weighted)": 0.9064404453420714,
+        "ROC-AUC (OVR)": 0.9797771830273471
+    }
+]
