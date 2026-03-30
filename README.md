@@ -1,5 +1,5 @@
 # Medical Abstract Classification
-**GitHub Repository**: [KB937/PD_](https://github.com/KB937/PD_)
+**GitHub Repository**: https://github.com/purvadip/MedAbstractClassifier 
 
 ## Project Summary
 This project aims to automate the categorization of medical research abstracts into three distinct classes: **Diagnosis**, **Treatment**, and **Prevention**. Given the exponentially growing volume of medical literature, automated text-as-data pipelines are crucial for researchers to systematically filter studies. This project reconstructs full abstracts from the PubMed 20k RCT dataset, applies a keyword heuristic to generate weak supervision labels, and evaluates both traditional machine learning baselines (TF-IDF with Logistic Regression and Multinomial Naive Bayes) and a state-of-the-art transformer model (BioBERT).
