@@ -72,22 +72,6 @@ BioBERT fine-tuning requires a GPU and is isolated in `biobert_colab.ipynb`.
 
 ---
 
-## Output Files
-
-All figures are written to `outputs/figures/`:
-
-| File | Description |
-|---|---|
-| `class_distribution.png` | Class counts before and after stratified undersampling |
-| `wordclouds.png` | Top terms per class (1×3 subplot) |
-| `abstract_length_dist.png` | Word-count KDE by label |
-| `confusion_matrix_logistic_regression.png` | Predicted vs. true labels — Logistic Regression |
-| `confusion_matrix_multinomial_nb.png` | Predicted vs. true labels — Multinomial NB |
-| `roc_curve_logistic_regression.png` | One-vs-rest ROC, Logistic Regression |
-| `roc_curve_multinomial_nb.png` | One-vs-rest ROC, Multinomial NB |
-
----
-
 ## Results
 
 All metrics are computed on the held-out test set (n = 1,773) under leakage-free conditions. Label keywords were removed from the corpus before vectorisation to prevent the models from reverse-engineering the heuristic.
