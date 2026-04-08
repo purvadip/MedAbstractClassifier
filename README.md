@@ -72,34 +72,6 @@ BioBERT fine-tuning requires a GPU and is isolated in `biobert_colab.ipynb`.
 
 ---
 
-## Output Files
-
-All figures are written to `outputs/figures/`:
-
-| File | Description |
-|---|---|
-| `class_distribution.png` | Class counts before and after stratified undersampling |
-| `wordclouds.png` | Top terms per class (1×3 subplot) |
-| `abstract_length_dist.png` | Word-count KDE by label |
-| `confusion_matrix_logistic_regression.png` | Predicted vs. true labels — Logistic Regression |
-| `confusion_matrix_multinomial_nb.png` | Predicted vs. true labels — Multinomial NB |
-| `roc_curve_logistic_regression.png` | One-vs-rest ROC, Logistic Regression |
-| `roc_curve_multinomial_nb.png` | One-vs-rest ROC, Multinomial NB |
-
----
-
-## Results
-
-All metrics are computed on the held-out test set (n = 1,773) under leakage-free conditions. Label keywords were removed from the corpus before vectorisation to prevent the models from reverse-engineering the heuristic.
-
-| Model | Accuracy | Macro F1 | Precision | Recall | ROC-AUC (OVR) |
-|---|---|---|---|---|---|
-| Logistic Regression (C = 10.0) | 81.50% | 0.6105 | 0.7833 | 0.5500 | 0.87 |
-| Multinomial NB (α = 0.05) | 81.22% | 0.6370 | 0.6823 | 0.5867 | 0.97 |
-| **BioBERT v1.2 (benchmark)** | **93.67%** | **0.9362** | **0.9365** | **0.9360** | — |
-
-*BioBERT result reported as an external benchmark; it was not trained or evaluated in this repository.*
-
 **Class-level breakdown (Logistic Regression):**  
 Treatment F1 = 0.89 (precision 0.79, recall 0.97) — Diagnosis F1 = 0.50 (precision 0.79, recall 0.37) — Prevention F1 = 0.44 (precision 0.76, recall 0.31).
 
