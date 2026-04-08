@@ -1,9 +1,0 @@
-{
-  "description": "Deterministic 80/20 train-test split indices for the balanced PubMed 20k RCT corpus (20,000 abstracts, 3 classes). Serialised after first run of baseline_model.load_split_data() so that the identical held-out test set (n ≈ 4,000) is reused on every subsequent run.",
-  "random_state": 42,
-  "total_samples": 20000,
-  "train_size": 16000,
-  "test_size": 4000,
-  "train": [],
-  "test": []
-}
